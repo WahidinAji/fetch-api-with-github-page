@@ -31,12 +31,7 @@
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
     <script>
-        fetch("https://kapalapi-cakrawala.koyeb.app/api/vessel-keys", {
-            method: 'GET',
-            withCredentials: true,
-            crossorigin: true,
-            mode: "no-cors"
-        }).then(
+        fetch("https://kapalapi-cakrawala.koyeb.app/api/vessel-keys").then(
             res => {
                 res.json().then(
                     data => {
